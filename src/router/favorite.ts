@@ -88,7 +88,7 @@ export const favoriteRouter = new Elysia({ prefix: "/favorites" })
     // Transform the response to include isFavorite flag
     const transformedFavorites = favorites.map((property: IProperty) => ({
       ...property,
-      isFavorite: true, // Since these are all favorites
+      is_favorite: true, // Since these are all favorites
       favorites: undefined, // Remove the favorites array from response
     }));
 
